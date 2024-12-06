@@ -34,19 +34,20 @@ p {
 
 .menu {
     background-color: #f5ebeb;
-    list-style-type: none;    
+    list-style-type: none;
     padding-top: 12px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: right;
     border-radius: 12px;
-    }
-    .menu>li {
-        display: inline; 
-        text-align: right; 
-        border-radius: 12px;
-    }
+}
+
+.menu>li {
+    display: inline;
+    text-align: right;
+    border-radius: 12px;
+}
 
 .menu>li>a {
     font-family: Arial, Helvetica, sans-serif;
@@ -57,29 +58,30 @@ p {
     color: #867070;
     border-radius: 12px;
     text-align: right;
-   }
-
-.menu>li>img {
-    text-align: left;
-
 }
 
-img {
-    border-color: #867070;
-    border-style: solid;
-    border-width:medium;
+.menu>li>.logo {
+    background-color: #E4D0D0;
+    padding: 8px;
+    margin-left: 8px;
+    text-decoration: none;
+    color: #867070;
     border-radius: 12px;
-    padding: 1px;
-    box-shadow: 6px 4px 8px;
     float: left;
-    background-color: transparent;
+
 }
-.profilpicture {
-    border-color: #867070;
-    border-style: solid;
-    border-width:medium;
+
+.profilepicture {
+    background-color: #E4D0D0;
     border-radius: 12px;
     padding: 1px;
-    box-shadow: 6px 4px 8px;
-    float: left;   
+    margin: center;
+    text-align: center;
+    font-display: center;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    padding-top: 8%;
 }
