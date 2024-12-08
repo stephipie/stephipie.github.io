@@ -5,7 +5,8 @@ body {
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: #867070;
-    font-size: xx-large font-weight: bold;
+    font-size: xx-large;
+    font-weight: bold;
     padding-left: 8px;
     text-align: center;
 }
