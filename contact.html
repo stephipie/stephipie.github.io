@@ -7,7 +7,7 @@
 
 <body>
     <ul class="menu">
-        <li><img class="logo" src="images/logo.png" height="120.px" alt="Logo" /></li>
+        <li><img class="logo" src="images/logo.png" height="70.px" alt="Logo" /></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="milestones.html">Meilensteine</a></li>
@@ -15,20 +15,21 @@
         <li><a href="contact.html">Kontakt</a></li>
     </ul>
     <h1>Kontakt</h1>
-        <div class="container">
-            <form action="action_page.php">
-            
-                <label for="fname">Vorname</label>
-                <input type="text" id="fname" name="firstname" placeholder="Dein Vorname..">
+    <div class="container">
+        <form>
 
-                <label for="lname">Nachname</label>
-                <input type="text" id="lname" name="lastname" placeholder="Dein Nachname..">
+            <label for="fname">Vorname</label>
+            <br>
+            <input type="text" id="fname" name="firstname" placeholder="Dein Vorname.." required>
+            <br>
+            <label for="lname">Nachname</label>
+            <br>
+            <input type="text" id="lname" name="lastname" placeholder="Dein Nachname.." required>
+            <br>
+            <label for="subject">Anfrage</label><br>
+            <textarea id="subject" name="subject" placeholder="Deine Anfrage.." style="height:200px" required></textarea><br>
 
-                <label for="subject">Anfrage</label>
-                <textarea id="subject" name="subject" placeholder="Deine Anfrage.." 
-                style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
+            <input type="submit" value="Submit">
 
         </form>
     </div>
