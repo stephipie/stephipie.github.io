@@ -60,6 +60,11 @@ p {
     text-align: right;
 }
 
+.menu>li>a:hover {
+    background-color: #845f5f;
+    color: white
+  }
+
 .menu>li>.logo {
     background-color: #E4D0D0;
     padding: 8px;
@@ -85,3 +90,35 @@ table {
     text-align: center;
     padding-top: 8%;
 }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding 12px;
+    font-family: Arial, Helvetica, sans-serif
+    border 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #E4D0D0;
+    color: #867070;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #845f5f;
+    color: white
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f5ebeb;
+    padding: 20px;
+  }
