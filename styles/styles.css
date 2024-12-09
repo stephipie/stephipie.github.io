@@ -73,14 +73,6 @@ main {
     align-items: center;
 }
 
-.contact {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
-
 h1,
 h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -165,9 +157,12 @@ textarea {
 }
 
 input[type=submit] {
-    background-color: #E4D0D0;
+    /* background-color: #E4D0D0; */
+    background-color: #fdfdfd;
+    /* background-color: #BAB2B5; */
     /* color: #867070; */
-    color: #4e4c4c;
+    /* color: #4e4c4c; */
+    color: goldenrod;
     padding: 12px 20px;
     border: none;
     border-radius: 12px;
@@ -175,7 +170,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #845f5f;
+    /* background-color: #845f5f; */
+    background-color: #BAB2B5;
     color: white
 }
 
