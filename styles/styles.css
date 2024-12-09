@@ -69,7 +69,7 @@ main {
     margin-top: 120px;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
 }
 
@@ -136,9 +136,9 @@ button:hover {
 }
 
 .profilepicture {
-    background-color: #E4D0D0;
+    /* background-color: #E4D0D0; */
     border-radius: 50%;
-    padding: auto;
+    /* padding: auto; */
     margin: auto;
 }
 
@@ -177,20 +177,34 @@ input[type=submit]:hover {
 
 .container {
     border-radius: 12px;
-    background-color: #f5ebeb;
-    /* background-color: #EEE2DC; */
+    /* background-color: #f5ebeb; */
+    background-color: #EEE2DC;
     width: 80%;
 }
 
 .contactcontainer {
     border-radius: 12px;
-    background-color: #f5ebeb;
-    /* background-color: #EEE2DC; */
+    /* background-color: #f5ebeb; */
+    background-color: #EEE2DC;
     padding: 20px;
     width: 70%;
     font-family: Arial, Helvetica, sans-serif;
     /* color: #867070; */
     color: #4e4c4c;
+}
+
+.homecontainer {
+    background-color: #EEE2DC;
+    border-radius: 50%;      
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30%;
+    padding-left: 1rem;
+    flex-direction: row-reverse;
+    /* text-align: center; */
 }
 
 .center {
