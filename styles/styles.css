@@ -4,7 +4,7 @@ body {
 
 header {
     background-color: #f5ebeb;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     border-radius: 12px;
 }
@@ -24,6 +24,7 @@ nav>ul>li {
     display: inline;
     text-align: right;
     border-radius: 12px;
+    line-height: 2.5rem;
 }
 
 nav>ul>li>a {
@@ -42,24 +43,37 @@ nav>ul>li>a:hover {
     color: white
 }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #867070;
-    font-size: xx-large;
-    font-weight: bold;
-    padding-left: 16px;
-    text-align: center;
+/* nav .hamburger-menu { */
+/* display: none; */
+/* margin: 8px 12px 8px 0; */
+/* } */
+
+main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 
+h1,
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     color: #867070;
-    font-size: large;
     font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    padding-left: 16px;
+}
+
+h2 {
+    font-size: 1rem;
     padding: 0;
     margin: 0;
     padding-left: 24px;
-    text-align: center;
 }
 
 .center {
@@ -103,26 +117,20 @@ button:hover {
 }
 
 .logo {
-    background-color: #E4D0D0;
+    /* background-color: #E4D0D0; */
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 12px;
+    padding: 8px;
+    margin-left: 8px;
 }
 
 .profilepicture {
     background-color: #E4D0D0;
     border-radius: 50%;
-    padding: 1px;
-    margin: center;
-    text-align: center;
-    font-display: center;
-}
-
-table {
-    margin: center;
-    text-align: center;
-    padding-top: 8%;
-}
+    padding: auto;
+    margin: auto;
+    }
 
 input[type=text],
 select,
@@ -172,3 +180,15 @@ input[type=submit]:hover {
     border-radius: 12px;
     text-align: right;
 }
+
+
+
+/* @media only screen and (max-width: 1024px) { */
+/* nav .hamburger-menu { */
+/* display: block; */
+/* } */
+/* nav>ul { */
+/* display: none; */
+/* } */
+
+/* } */
