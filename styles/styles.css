@@ -2,6 +2,8 @@ body {
     /* background-color: #E4D0D0; */
     /* background-color: #e8e3da; */
     background-color: #BAB2B5;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* header { */
@@ -245,12 +247,15 @@ footer {
 }
 
 
-/* @media only screen and (max-width: 1024px) { */
-/* nav .hamburger-menu { */
-/* display: block; */
-/* } */
-/* nav>ul { */
-/* display: none; */
-/* } */
+@media (min-width: 600px) { */
+nav.ul {
+display: flex;
+justify-content: space-between;
+}
+}
 
-/* } */
+@media (max-width: 599px) {
+nav>ul {
+flex-direction: column;
+}
+}
