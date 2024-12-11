@@ -247,15 +247,15 @@ footer {
 }
 
 
-@media (min-width: 600px) { */
-nav.ul {
+@media only screen and (min-width: 600px) { */
+nav>ul>li {
 display: flex;
 justify-content: space-between;
 }
 }
 
-@media (max-width: 599px) {
-nav>ul {
+@media only screen and (max-width: 599px) {
+nav>ul>li {
 flex-direction: column;
 }
 }
