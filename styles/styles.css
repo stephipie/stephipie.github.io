@@ -228,19 +228,19 @@ input[type=submit]:hover {
 }
 
 .projects>a {
-    color: #4e4c4c;
-    text-decoration: none;
+    background-color: #fdfdfd;
     padding: 12px;
     margin: 12px;
+    text-decoration: none;
+    color: goldenrod;
     border-radius: 12px;
     text-align: left;
-    border: 1px solid #BAB2B5;
+    border: none;
 }
 
 .projects>a:hover {
-    background-color: #fdfdfd;
-    color: goldenrod;
-    border: none;
+    background-color: #BAB2B5;
+    color: white;
 }
 
 /* .home {
