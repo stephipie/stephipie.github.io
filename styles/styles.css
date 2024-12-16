@@ -141,7 +141,6 @@ button:hover {
 }
 
 .logo {
-    /* background-color: #E4D0D0; */
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 12px;
@@ -150,9 +149,7 @@ button:hover {
 }
 
 .profilepicture {
-    /* background-color: #E4D0D0; */
     border-radius: 50%;
-    /* padding: auto; */
     margin: auto;
 }
 
@@ -254,6 +251,8 @@ input[type=submit]:hover {
     background-color: #EEE2DC;
     padding: 20px;
     width: 80%;
+    transform: scale(0.75);
+    transition: transform 0.5s ease-in-out;
 }
 
 .home:hover {
