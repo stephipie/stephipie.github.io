@@ -240,14 +240,24 @@ input[type=submit]:hover {
     border: none;
 }
 
-.home {
+/* .home {
     background-color: #EEE2DC;
     border-radius: 50%;
-    width: 80%;
-    height: 80%;
+    width: 400px;
+    height: 400px;
     flex-direction: row-reverse;
     transform: scale(0.75);
     transition: transform 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+} */
+
+.home {
+    border-radius: 12px;
+    /* background-color: #f5ebeb; */
+    background-color: #EEE2DC;
+    padding: 20px;
+    width: 80%;
 }
 
 .home:hover {
