@@ -91,3 +91,10 @@ h1 {
 .todo-list>li>button:hover {
     background-color: #c9302c;
 }
+
+.todo-info {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666666;
+    margin-top: 20px;
+}
