@@ -13,6 +13,13 @@ body {
     margin: 0 auto;
 }
 
+/* main {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+} */
 /* header { */
 /* background-color: #f5ebeb; */
 /* background-color: #EEE2DC; */
@@ -75,13 +82,6 @@ nav>ul>li>a:hover {
 /* margin: 8px 12px 8px 0; */
 /* } */
 
-main {
-    margin-top: 120px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
 
 h1,
 h2 {
@@ -200,6 +200,8 @@ input[type=submit]:hover {
     /* background-color: #f5ebeb; */
     background-color: #EEE2DC;
     width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .milestones {
@@ -207,6 +209,8 @@ input[type=submit]:hover {
     /* background-color: #f5ebeb; */
     background-color: #EEE2DC;
     width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .contact {
@@ -217,6 +221,7 @@ input[type=submit]:hover {
     width: 70%;
     /* color: #867070; */
     color: #4e4c4c;
+    box-sizing: border-box;
 }
 
 .projects {
@@ -224,7 +229,7 @@ input[type=submit]:hover {
     background-color: #EEE2DC;
     padding: 20px;
     width: 70%;
-
+    box-sizing: border-box;
 }
 
 .projects>a {
@@ -256,13 +261,15 @@ input[type=submit]:hover {
 } */
 
 .home {
-    border-radius: 12px;
+    border-radius: 50px 20px;
     /* background-color: #f5ebeb; */
     background-color: #EEE2DC;
     padding: 20px;
     width: 80%;
+    height: 120%;
     transform: scale(0.75);
     transition: transform 0.5s ease-in-out;
+    box-sizing: border-box;
 }
 
 .home:hover {
