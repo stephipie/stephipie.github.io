@@ -4,11 +4,11 @@ const todoList = document.getElementById("todo-list");
 
 let listItem = [];
 
-todoForm.addEventListener("submit", function submitForm(event) {
+todoForm.addEventListener("submit", (event) => {
     event.preventDefault();
     // const taskText = input.value.trim();
-    var taskName = todoInput.value;
-    taskName.trim();
+    let taskName = todoInput.value.trim();
+    // taskName.trim()
     // const listItem = document.createElement("li");
     // Early - Return
     if (taskName === '') {
@@ -31,7 +31,7 @@ todoForm.addEventListener("submit", function submitForm(event) {
     };
     listItem.push(newTask);
     // console.log(listItem);
-    taskName = '';
+    todoInput.value = "";
     showTodos();
 });
 
