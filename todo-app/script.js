@@ -26,6 +26,7 @@ todoForm.addEventListener("submit", function submitForm(event){
 });
 
 function addNewTask(taskForm) {
+    // todoList.innerHTML = '';
     const taskText = taskForm;
     // Id for our task
     var date = Date.now();
