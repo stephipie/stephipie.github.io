@@ -112,9 +112,9 @@ h2 {
 }
 
 details {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 12px;
     color: #4e4c4c;
 }
 
@@ -126,7 +126,6 @@ details>summary {
     /* color: #867070; */
     color: #4e4c4c;
     font-size: 1rem;
-    padding: 12px;
 }
 
 button {
@@ -200,7 +199,7 @@ input[type=submit]:hover {
     /* background-color: #f5ebeb; */
     background-color: #EEE2DC;
     width: 80%;
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
 }
 
@@ -209,16 +208,19 @@ input[type=submit]:hover {
     /* background-color: #f5ebeb; */
     background-color: #EEE2DC;
     width: 80%;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 12px;
+    /* box-sizing: border-box; */
 }
 
 .contact {
     border-radius: 12px;
     /* background-color: #f5ebeb; */
     background-color: #EEE2DC;
-    padding: 20px;
-    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 80%;
+    /* max-height: fit-content; */
     /* color: #867070; */
     color: #4e4c4c;
     box-sizing: border-box;
@@ -229,7 +231,7 @@ input[type=submit]:hover {
     background-color: #EEE2DC;
     padding: 20px;
     width: 70%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .projects>a {
