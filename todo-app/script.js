@@ -19,6 +19,7 @@ todoForm.addEventListener("submit", (event) => {
     };
     listItem.push(newTask);
     // console.log(listItem);
+    // saveTodos()
     todoInput.value = "";
     showTodos();
 });
@@ -32,14 +33,22 @@ function showTodos() {
         
         const checkBox = document.createElement("input");
         checkBox.type = 'checkbox';
+        checkBox.checked = task.status;
         // checkBox.setAttribute('type','checkbox');
         checkBox.setAttribute('aria-label', 'Aufgabe erledigen');
-        // showTodos();
-        saveTodos();
+        checkBox.addEventListener('change', () => {
+            task.status = checkBox.checked;
+            console.log(listItem)
+            showTodos();
+            saveTodos();
+        })
         
         const span = document.createElement("span");
         // span.innerText = task.id + ' ' + task.textInput;
         span.innerText = task.textInput;
+        if (task.status) {
+            span.style.textDecoration = 'line-through';
+        };
         
         const button = document.createElement("button");
         button.innerText = "Löschen";
@@ -49,7 +58,6 @@ function showTodos() {
             const actualListItem = button.parentElement;
             todoList.removeChild(actualListItem);
             listItem.pop(task.id);
-            showTodos();
             saveTodos();
         });
         
@@ -69,7 +77,7 @@ function saveTodos() {
     const localStorageTodos = JSON.stringify(listItem);
     // console.log(localStorageTodos)
     localStorage.setItem("todos", localStorageTodos);
-    // console.log(localStorage.getItem("todos"))
+    console.log(listItem)
 };
 // saveTodos()
 // Create load function 
@@ -78,9 +86,11 @@ function loadTodos() {
     if (!existingTodos) {
         listItem = [];
     }
+        else {
+        const parse = JSON.parse(existingTodos);
+        listItem = parse;
+    }        
     // console.log(typeof (existingTodos));
-    const parse = JSON.parse(existingTodos);
-    listItem = parse;
     // console.log(listItem)
     // console.log(loadedTodosFromLocalStorage)
 };
