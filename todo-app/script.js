@@ -6,24 +6,12 @@ let listItem = [];
 
 todoForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    // const taskText = input.value.trim();
-    let taskName = todoInput.value.trim();
-    // taskName.trim()
-    // const listItem = document.createElement("li");
-    // Early - Return
-    if (taskName === '') {
+        let taskName = todoInput.value.trim();
+        if (taskName === '') {
         alert("Bitte füge eine neue Aufgabe hinzu");
         return false;
     };
-    // Task added to list
-    // addNewTask(taskName);
-    // console.log("Formular übertragen");
-    // Clear taskName
-    // taskName = "";
-    // Select all Input items within the form-element
-    // var allInputs = todoForm.querySelectorAll("input");
-    // All Input added from user will be cleared 
-    // .forEach(singleInput => singleInput.value = "");
+    
     const newTask = {
         id: Date.now(),
         textInput: taskName,
@@ -37,18 +25,7 @@ todoForm.addEventListener("submit", (event) => {
 
 function showTodos() {
     todoList.innerHTML = '';
-    // const taskText = taskForm;
-    // Id for our task
-    // var date = Date.now();
-    // Define Object
-    // const task = {
-    //     status: false, 
-    //     textInput: taskText,
-    //     id: date
-    // };
-    // Add Object to Array
-    // listItem.push(task);
-
+  
     // Add new task to task-list
     listItem.forEach((task) => {
         const taskListItem = document.createElement("li");
@@ -80,7 +57,6 @@ function showTodos() {
         taskListItem.appendChild(span);
         taskListItem.appendChild(button);
         todoList.appendChild(taskListItem);
-        // listItem.pop(task.id);
     });
     saveTodos();
 };
