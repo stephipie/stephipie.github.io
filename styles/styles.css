@@ -2,6 +2,7 @@ body {
     /* background-color: #E4D0D0; */
     /* background-color: #e8e3da; */
     background-color: #BAB2B5;
+    /* background-color:#EEE2DC; */
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -171,7 +172,7 @@ textarea {
     border-radius: 12px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
     resize: vertical;
 }
 
@@ -218,8 +219,9 @@ input[type=submit]:hover {
     background-color: #EEE2DC;
     margin-top: 15px;
     margin-bottom: 15px;
-    padding: 15px;
+    padding: 12px;
     width: 80%;
+    
     /* max-height: fit-content; */
     /* color: #867070; */
     color: #4e4c4c;
@@ -230,8 +232,9 @@ input[type=submit]:hover {
     border-radius: 12px;
     background-color: #EEE2DC;
     padding: 20px;
-    width: 70%;
+    width: 70%; */
     /* box-sizing: border-box; */
+    
 }
 
 .projects>a {
@@ -242,7 +245,6 @@ input[type=submit]:hover {
     color: goldenrod;
     border-radius: 12px;
     text-align: left;
-    border: none;
 }
 
 .projects>a:hover {
@@ -297,6 +299,7 @@ footer {
     width: 100%;
     /* background-color: #867070; */
     background-color: #EEE2DC;
+    /* background-color: #BAB2B5; */
     /* color: white; */
     color: goldenrod;
     text-align: center;
