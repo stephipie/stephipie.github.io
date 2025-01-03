@@ -244,7 +244,7 @@ input[type=submit]:hover {
     text-decoration: none;
     color: goldenrod;
     border-radius: 12px;
-    text-align: left;
+    display: grid;
 }
 
 .projects>a:hover {
