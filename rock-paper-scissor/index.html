@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/thumb.svg" />
+    <script type="module" defer src="./main.js"></script>
+    <link href="./style.css" rel="stylesheet" />
+    <title>Rock Paper Scissors</title>
+  </head>
+
+  <body
+    class="flex min-h-screen flex-col items-center justify-center bg-sky-950">
+    <!-- Header-Bereich -->
+    <header class="mb-20 mt-20 justify-items-center font-metalmania text-white">
+      <div
+        class="w-72 justify-items-center rounded border-2 border-solid border-white py-3">
+        <h1 class="text-xl">Rock Paper Scissors</h1>
+        <div
+          class="mt-2 size-16 rounded-full border-2 border-solid px-4 py-2 text-center font-semibold">
+          <span>Score</span>
+          <span id="score">0</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hauptbereich mit Buttons -->
+    <main class="flex flex-col items-center space-y-4">
+      <button
+        data-choice="paper"
+        class="size-32 rounded-full border-[12px] border-paper bg-white px-4 py-2 text-white transition-transform hover:scale-125">
+        <img src="./images/paper.svg" alt="Paper" class="size-16" />
+      </button>
+      <div class="space-x-5 py-5">
+        <button
+          data-choice="scissors"
+          class="size-32 rounded-full border-[12px] border-scissors bg-white px-4 py-2 transition-transform hover:scale-125">
+          <img src="./images/scissors.svg" alt="Scissors" class="size-16" />
+        </button>
+        <button
+          data-choice="rock"
+          class="size-32 rounded-full border-[12px] border-rock bg-white px-4 py-2 transition-transform hover:scale-125">
+          <img src="./images/rock.svg" alt="Rock" class="size-16" />
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <button
+        id="rulesbutton"
+        class="outline-offset mb-5 mt-5 rounded px-4 py-2 text-sm outline text-white">
+        Rules
+      </button>
+    </footer>
+
+    <!-- Startbildschirm -->
+    <div
+      id="startscreen"
+      class="absolute flex min-h-screen w-full flex-col items-center justify-center bg-gray-900 text-center font-metalmania text-8xl text-white">
+      <h1>Rock</h1>
+      <h2>Paper</h2>
+      <h3>Scissors</h3>
+      <button
+        id="startbutton"
+        class="outline-offset mb-5 mt-5 rounded px-4 py-2 text-sm outline">
+        Start Game
+      </button>
+    </div>
+
+    <!-- Regeln -->
+
+    <div
+      id="rules"
+      class="absolute hidden w-1/3 items-center rounded border-2 border-solid border-white bg-[#1f3656] p-4 text-white">
+      <img
+        src="./images/close.svg"
+        alt="Close"
+        id="closebutton"
+        class="absolute right-4 top-4 size-3 cursor-pointer" />
+      <h2 class="text-lg font-bold">Rules</h2>
+      <p class="text-sm">
+        Rock Paper Scissors is a game that is played between two players...
+      </p>
+    </div>
+
+    <!-- Ergebnisanzeige -->
+    <div
+      id="results"
+      class="absolute mb-20 mt-20 flex hidden w-[450px] flex-col rounded border bg-[#1f3656] p-4 text-white">
+      <h3 id="result" class="text-center font-metalmania text-4xl">You win</h3>
+      <div class="flex flex-row items-center justify-between">
+        <div class="flex w-full flex-col items-center p-4">
+          <p class="m-4 font-metalmania text-xl">You chose:</p>
+          <div id="userchoice">
+            <div
+              class="flex size-32 animate-pulse items-center justify-center rounded-full border-[12px] border-scissors bg-white px-4 py-2">
+              <img src="./images/scissors.svg" alt="Rock" class="size-16" />
+            </div>
+          </div>
+        </div>
+        <div class="flex w-full flex-col items-center p-4">
+          <p class="m-4 font-metalmania text-xl">Computer chose:</p>
+          <div id="computerchoice">
+            <div
+              class="flex size-32 animate-pulse items-center justify-center rounded-full border-[12px] border-rock bg-white px-4 py-2">
+              <img src="./images/rock.svg" alt="Rock" class="size 16" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <button
+          id="playagain"
+          class="rounded-full border px-4 py-2 text-center">
+          Play Again
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
