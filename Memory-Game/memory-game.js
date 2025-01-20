@@ -16,7 +16,7 @@ function createGameBoard() {
   cards.forEach((value, index) => {
     const card = document.createElement("div");
     const cardImage = document.createElement("img");
-    cardImage.setAttribute("src", "./images/card.png");
+    cardImage.setAttribute("src", "./images/logo.png");
     cardImage.setAttribute("alt", value);
     card.appendChild(cardImage);
     card.classList.add("card");
@@ -78,8 +78,8 @@ function checkmatch() {
     const errorSound = new Audio('audio/error.mp3');
     errorSound.play();
     setTimeout(() => {
-      card1.querySelector('img').setAttribute('src', './images/card.png');
-      card2.querySelector('img').setAttribute('src', './images/card.png');
+      card1.querySelector('img').setAttribute('src', './images/logo.png');
+      card2.querySelector('img').setAttribute('src', './images/logo.png');
       lockBoard = false;
     }, 1000);
   }

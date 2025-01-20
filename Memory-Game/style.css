@@ -1,11 +1,17 @@
 body {
     font-family: "Times New Roman", Times, serif;
     text-align: center;
-    background-color: #ccd0da;
-  
+    /* color: #4e4c4c; */
+    background-color: #EEE2DC;
   }
-  
-  .game-board {
+
+  h1 {
+    color: #4e4c4c;
+    font-weight: bold;
+    text-align: center;
+  }
+
+   .game-board {
     /* border: 1px solid black; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -19,7 +25,7 @@ body {
   
   .game-over {
     display: none;
-    background-color: aqua;
+    background-color: #BAB2B5;
     position: absolute;
     top: 0;
     left: 0;
@@ -31,4 +37,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #FFF;
     font-size: 3rem;
+  }
+
+  #play-again {
+    background-color: #fdfdfd;
+    color: goldenrod;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
   }
