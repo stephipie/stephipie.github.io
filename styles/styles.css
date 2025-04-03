@@ -163,6 +163,24 @@ button:hover {
     margin: auto;
 }
 
+.holos-app {
+    text-align: center;
+    border-radius: 6px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+.holos-app>li {
+    padding: auto;
+    margin: auto;
+}
+
+.holos-app>li>img {
+     border-radius: 12px;
+}
+
 input[type=text],
 select,
 textarea {
@@ -232,10 +250,9 @@ input[type=submit]:hover {
     border-radius: 12px;
     background-color: #EEE2DC;
     padding: 20px;
-    width: 70%; */
+    width: 70%; 
     /* box-sizing: border-box; */
-    
-}
+    }
 
 .projects>a {
     background-color: #fdfdfd;
@@ -245,6 +262,7 @@ input[type=submit]:hover {
     color: goldenrod;
     border-radius: 12px;
     display: grid;
+    text-align: center;
 }
 
 .projects>a:hover {
