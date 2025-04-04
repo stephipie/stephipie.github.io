@@ -232,19 +232,39 @@ input[type=submit]:hover {
 }
 
 .contact {
-    border-radius: 12px;
+    border-radius: 50px 20px;
     /* background-color: #f5ebeb; */
     background-color: #EEE2DC;
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 12px;
-    width: 80%;
-    
+    width: 40%;  
+    height: 100%;  
     /* max-height: fit-content; */
     /* color: #867070; */
     color: #4e4c4c;
-    box-sizing: border-box;
+    margin: auto;
+    box-sizing: border-box;  
+    text-align: center;  
 }
+
+.contact-link>a {
+    align-items: center;
+    /* border-radius: 6px; */
+    /* list-style-type: none;
+    display: flex; */
+    /* flex-direction: row; */
+    justify-content: space-between;
+    padding: 12px;
+    margin: 12px;
+    color: #4e4c4c;
+}
+
+.contact-link>a:hover {
+    background-color: #fdfdfd;
+    color: goldenrod;
+}
+
 
 .projects {
     border-radius: 12px;
