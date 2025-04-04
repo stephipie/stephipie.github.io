@@ -270,6 +270,17 @@ input[type=submit]:hover {
     color: white;
 }
 
+details {
+    background-color: #fdfdfd;
+    padding: 12px;
+    margin: 12px;
+    /* text-decoration: none; */
+    color: goldenrod;
+    border-radius: 12px;
+    display: grid;
+    text-align: center;
+}
+
 /* .home {
     background-color: #EEE2DC;
     border-radius: 50%;
