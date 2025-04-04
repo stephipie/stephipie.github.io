@@ -163,23 +163,23 @@ button:hover {
     margin: auto;
 }
 
-.holos-app {
-    text-align: center;
-    border-radius: 6px;
+/* .holos-app {
+    /* text-align: center; */
+    /* border-radius: 6px; */
     list-style-type: none;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
+    justify-content: space-between; */
+/* }
 
 .holos-app>li {
-    padding: auto;
-    margin: auto;
-}
+    padding: 6px;
+    margin: 6px;
+} */
 
-.holos-app>li>img {
+/* .holos-app>li>img {
      border-radius: 12px;
-}
+} */ */
 
 input[type=text],
 select,
@@ -263,6 +263,8 @@ input[type=submit]:hover {
 .contact-link>a:hover {
     background-color: #fdfdfd;
     color: goldenrod;
+    border-radius: 12px;
+    padding-bottom: 6px;
 }
 
 
@@ -271,7 +273,7 @@ input[type=submit]:hover {
     background-color: #EEE2DC;
     padding: 20px;
     width: 70%; 
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     }
 
 .projects>a {
@@ -282,7 +284,7 @@ input[type=submit]:hover {
     color: goldenrod;
     border-radius: 12px;
     display: grid;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .projects>a:hover {
